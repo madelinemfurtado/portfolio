@@ -1,0 +1,317 @@
+body {
+	padding-top: 200px;
+}
+/* HEADER & MENU */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 100px;
+	background: #000000;
+}
+h1 {
+	font-family: "Emilys Candy", serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	line-height: 100px;
+}
+header h1 a {
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: "Emilys Candy", serif;
+	font-weight: 400;
+	font-size: 40PX;
+	font-style: normal;
+	line-height: 1.5em;
+}
+h2 {
+	font-family: "Emilys Candy", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 50px;
+	margin-left: 5%;
+	text-align: left;
+}
+article {
+	margin: auto;
+	font-family: "Luxurious Roman", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1.5em;
+	padding-bottom: 30px;
+	justify-content: center;
+}
+
+p {
+	font-family: "Luxurious Roman", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+.infinity svg {
+	width: 40px;
+	height: auto;
+}
+.infinity {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+footer {
+	background: #000000;
+	padding: 50px 0;
+	text-align: center;
+	color:#fff;
+	font-family: "Luxurious Roman", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+}
+footer h3 {
+	font-size: 22px;
+	margin-bottom: 0;
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+footer svg {
+	width: auto;
+	height: 45px;
+}
+.aboutme {
+	padding-top: 7%;
+	padding-bottom: 8%;
+}
+.about img {
+	display: block;
+	margin: auto;
+}
+.about h2, .info h3 {
+	text-align: center;
+}
+.info p {
+	text-align: left;
+	line-height: 1.5em;
+}
+
+/* NAVIGATION */
+nav {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+	align-items: center;
+	
+}
+
+
+nav ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+	right: 4000px;
+    padding: 0;
+}
+nav ul li {
+	border-color: black;
+	border-width: 10px;
+}
+nav:hover ul {
+    right: 85px;
+	padding-top: 8px;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    padding: 10px 15px;
+	width: 100%;
+    color: black;
+	text-align: left;
+	font-family: "Luxurious Roman", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 17px;
+	text-align: right;
+}
+
+.photos img {
+	width: 400px;
+	height:auto;
+	margin: auto;
+}
+/* PHOTOGRAPHY */
+.photos h2 {
+	text-align: center;
+}
+.photos img {
+	transition: transform 0.3s ease-in-out;
+	display: block;
+	margin: auto;
+}
+.photos img:hover {
+	transform: scale(1.1);
+}
+
+.internal {
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 300px;
+		height: auto;
+		display: block;
+		justify-content: center;
+		margin: auto;
+	}
+	h3 {
+		text-align: center;
+	}
+	padding-top: 1%;
+	padding-bottom: 7%;
+}
+.infinity img {
+	width: 600px;
+	height: auto;
+}
+.pages svg {
+	width: 50px;
+	height: auto;
+}
+.pages svg {
+	transition: transform 0.1s ease-in-out;
+}
+.pages svg:hover {
+	transform: scale(1.2);
+}
+.pages ul li {
+	list-style-type: none;
+}
+.pages ul {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 45px;
+}
+
+@media only screen and (min-width: 750px) {
+.row img {
+	width: 700px;
+	height: auto;
+	margin: auto;
+}
+}
+
+/*FULL DESKTOP*/
+@media only screen and (min-width: 1200px) {
+	h2 {
+		font-size: 50px;
+		text-align: right;
+		margin: 0%;
+	}
+header h1 a {
+	font-size: 50px;
+}
+article {
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	width: 75%;
+}
+.about h2 {
+	text-align: right;
+}
+.info h3 {
+	text-align: left;
+}
+#hamburger {
+	display: none;
+}
+nav ul {
+    position: static;
+	display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	text-align: left;
+}
+nav:hover ul {
+	padding-top: 0px;
+}
+nav ul li a:hover {
+	text-decoration:line-through;
+}
+nav {
+	position: static;
+	width: 500px;
+	padding-right: 5%;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer {
+	margin: auto;
+	justify-content: center;
+	display: block;
+}
+.info {
+	padding-top: 10PX;
+}
+.internal {
+	img {
+		height: auto;
+		width: 500px;
+	}
+}
+.infinity img {
+	width: 800px;
+	height: auto;
+}
+.photos {
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+	h2 {
+		padding-bottom: 10px;
+	}
+}
+
+.row {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+.photos img {
+	height: 400px;
+	width: auto;
+	display: block;
+}
+.row {
+	flex-wrap: wrap;
+}
+.internal {
+	h3 {
+		text-align: left;
+	}
+}
+}
+
+

@@ -1,5 +1,6 @@
+
 body {
-	padding-top: 200px;
+	padding-top: 150px;
 }
 /* HEADER & MENU */
 header {
@@ -12,9 +13,9 @@ header {
 	background: #000000;
 }
 h1 {
-	font-family: "Emilys Candy", serif;
-	font-weight: 400;
-	font-style: normal;
+	font-family: "Lacquer", system-ui;
+ 	font-weight: 400;
+  	font-style: normal;
 	text-align: left;
 	margin: 0;
 	padding: 0;
@@ -25,25 +26,32 @@ header h1 a {
 	color: white;
 	font-size: 40px;
 }
-
 h3 {
-	font-family: "Emilys Candy", serif;
-	font-weight: 400;
-	font-size: 40PX;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
 	font-style: normal;
-	line-height: 1.5em;
+	font-size: 30PX;
+	font-style: normal;
+	line-height: 1em;
+	margin-bottom: 40px;
 }
-h2 {
-	font-family: "Emilys Candy", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 50px;
+h2, div h2 {
+	font-family: "Lacquer", system-ui;
+ 	font-weight: 600px;
+  	font-style: normal;
+	font-size: 60px;
 	margin-left: 5%;
 	text-align: left;
+	margin-bottom: 40px;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 article {
-	margin: auto;
-	font-family: "Luxurious Roman", serif;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 24px;
@@ -53,34 +61,27 @@ article {
 }
 
 p {
-	font-family: "Luxurious Roman", serif;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 14px;
+	line-height: 1.5em;
 }
-.infinity svg {
-	width: 40px;
-	height: auto;
-}
-.infinity {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-}
+
 footer {
 	background: #000000;
 	padding: 50px 0;
 	text-align: center;
 	color:#fff;
-	font-family: "Luxurious Roman", serif;
-	font-weight: 400;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 300;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 14px;
 }
 footer h3 {
 	font-size: 22px;
-	margin-bottom: 0;
+	font-weight: 300;
 }
 .icons {
 	display: flex;
@@ -91,15 +92,15 @@ footer svg {
 	width: auto;
 	height: 45px;
 }
-.aboutme {
-	padding-top: 7%;
-	padding-bottom: 8%;
-}
+
 .about img {
 	display: block;
 	margin: auto;
 }
-.about h2, .info h3 {
+.aboutme h3 {
+	text-align: left;
+}
+.aboutme h2 {
 	text-align: center;
 }
 .info p {
@@ -107,47 +108,59 @@ footer svg {
 	line-height: 1.5em;
 }
 
+
 /* NAVIGATION */
-nav {
+nav{
     position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 150px;
-	align-items: center;
+    top: 65px;
+	right: -50px;
+    width: 175PX;
+	align-content: center;
 	
 }
-
+nav ul li {
+	position: relative;
+	top: -20px;
+	right: 50px;
+}
 
 nav ul {
-    position: absolute;
+    position:relative;
     list-style-type: none;
-    margin: 0;
-	right: 4000px;
-    padding: 0;
+	right: 5000PX;
+    padding: 5px;
 }
-nav ul li {
-	border-color: black;
-	border-width: 10px;
-}
+
 nav:hover ul {
-    right: 85px;
-	padding-top: 8px;
+    right: 133px;
+	top: 55px;
 }
+
+nav:hover ul li a:hover {
+	text-align: center;	
+	font-weight: 600;
+}
+
+nav:hover ul li a {
+	background-color: #000000;
+}
+
 nav ul li a {
     text-decoration: none;
     display: block;
-    background-color: white;
-    padding: 10px 15px;
+	padding-left: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 15px;
 	width: 100%;
-    color: black;
-	text-align: left;
-	font-family: "Luxurious Roman", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 17px;
+    color: rgb(255, 255, 255);
 	text-align: right;
+	font-family: "Roboto Mono", monospace;
+ 	font-optical-sizing: auto;
+  	font-weight: 300;
+  	font-style: normal;
+	font-size: 16px;
 }
-
 .photos img {
 	width: 400px;
 	height:auto;
@@ -156,36 +169,31 @@ nav ul li a {
 /* PHOTOGRAPHY */
 .photos h2 {
 	text-align: center;
+	font-size: 60PX;
 }
 .photos img {
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.1s ease-in-out;
 	display: block;
 	margin: auto;
 }
 .photos img:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .internal {
-	align-items: center;
-	justify-content: center;
-	img {
-		width: 300px;
-		height: auto;
-		display: block;
-		justify-content: center;
-		margin: auto;
-	}
 	h3 {
 		text-align: center;
 	}
-	padding-top: 1%;
-	padding-bottom: 7%;
+	justify-content: center;
+	align-items: center;
 }
-.infinity img {
-	width: 600px;
+.internal p img {
+	display:block;
+	width: 300px;
 	height: auto;
+	margin: auto;
 }
+
 .pages svg {
 	width: 50px;
 	height: auto;
@@ -198,13 +206,94 @@ nav ul li a {
 }
 .pages ul li {
 	list-style-type: none;
+	align-content: center;
 }
 .pages ul {
 	display: flex;
-	justify-content: space-between;
-	margin-right: 45px;
+	justify-content: center;
+	align-content: center;
+	padding:10%;
+	gap: 30px;
 }
 
+.internal {
+	img {
+		height: 400px;
+		width: auto;
+	}
+	p {
+		font-size: 14px;
+		font-weight: 400px;
+	}
+}
+
+.numbertext {
+	font-family: "Roboto Mono", monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14pt;
+	text-align: right;
+	color: #fff;
+}
+h2 {
+	text-align: center;
+}
+.mySlides img {
+	justify-content: center;
+}
+
+.slideshow-container {
+	background-color: #000000;
+	padding: 10px 40px 10px 40px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor:pointer;
+	width: auto;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+	align-content: center;
+	padding: 5px;
+	border-radius: 3px;
+  }
+
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	color: #000000;
+	background-color: #fff;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 8px;
+	width: 8px;
+	margin: 2px 2px;
+	background-color: #8a8989;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #000000;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: .75s;
+  }
+
+@keyframes fade {
+	from {opacity: .5} 
+	to {opacity: 1}
+  }  
 @media only screen and (min-width: 750px) {
 .row img {
 	width: 700px;
@@ -212,7 +301,16 @@ nav ul li a {
 	margin: auto;
 }
 }
-
+@media only screen and (min-width: 570px) {
+	.row img {
+		width: 700px;
+		height: auto;
+		margin: auto;
+	}
+	header h1 a {
+		font-size: 50px;
+	}
+}
 /*FULL DESKTOP*/
 @media only screen and (min-width: 1200px) {
 	h2 {
@@ -221,7 +319,11 @@ nav ul li a {
 		margin: 0%;
 	}
 header h1 a {
-	font-size: 50px;
+	font-size: 60px;
+}
+.slideshow-container img {
+	width: 700px;
+	height: auto;
 }
 article {
 	display: flex;
@@ -229,8 +331,11 @@ article {
 	justify-content: center;
 	width: 75%;
 }
-.about h2 {
-	text-align: right;
+.infinity {
+	display: block;
+}
+h2 {
+	padding: 0;
 }
 .info h3 {
 	text-align: left;
@@ -242,26 +347,32 @@ nav ul {
     position: static;
 	display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+	justify-content: space-evenly;
+	
+}
+.about {
+	margin-left: 15%;
+	margin-right: 15%;
 }
 nav ul li a {
 	color: white;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	font-size: 20px;
-	text-align: left;
+	text-align: right;
+	width: 193px;
+	padding:10px;
 }
-nav:hover ul {
-	padding-top: 0px;
-}
-nav ul li a:hover {
-	text-decoration:line-through;
-}
+
 nav {
 	position: static;
-	width: 500px;
-	padding-right: 5%;
+	width: 600px;
+	padding-right: 40px;
 }
+nav:hover ul li a:hover {
+	text-align: right;
+	font-weight: 600px;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -272,14 +383,10 @@ footer {
 	justify-content: center;
 	display: block;
 }
-.info {
-	padding-top: 10PX;
-}
-.internal {
-	img {
-		height: auto;
-		width: 500px;
-	}
+.about h2{
+	padding-bottom: 15px;
+	display: block;
+
 }
 .infinity img {
 	width: 800px;
@@ -293,7 +400,18 @@ footer {
 		padding-bottom: 10px;
 	}
 }
+.index {
+	display: flex;
+	gap: 20px;
+	flex-direction: row;
+}
 
+.internal p img {
+	display:block;
+	width: 700px;
+	height: auto;
+	margin: auto;
+}
 .row {
 	display: flex;
 	gap: 20px;
@@ -313,5 +431,3 @@ footer {
 	}
 }
 }
-
-

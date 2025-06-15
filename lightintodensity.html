@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Madeline's Portfolio</title>
+	<!--Normalize CSS-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+	<!--My Styles-->
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1><a href="index.html">MadELINE FurTAdO</a></h1>
+        <nav class="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" id="hamburger"/></svg>
+            <ul>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="graphic.html">Design Projects</a></li>
+                <li><a href="jewelry.html">Jewelry Designs</a></li>
+            </ul>
+        </nav>
+	</header>
+	<section class="pages">
+		<ul>
+			<li><a href="bembo.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a></li>
+			<li>		
+				<article class="infinity">
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+						  <div class="numbertext">1 / 12</div>
+						  <img src="images/lightsign.png" style="width:100%">
+						</div>
+						
+						<div class="mySlides fade">
+						  <div class="numbertext">2 / 12</div>
+						  <img src="images/titlewall.png" style="width:100%">
+						</div>
+						
+						<div class="mySlides fade">
+						  <div class="numbertext">3 / 12</div>
+						  <img src="images/west1.png" style="width:100%">
+						</div>
+			
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 12</div>
+							<img src="images/west2.png" style="width:100%">
+						</div>
+			
+						<div class="mySlides fade">
+							<div class="numbertext">5 / 12</div>
+							<img src="images/west3.png" style="width:100%">
+						</div>
+			
+						<div class="mySlides fade">
+							<div class="numbertext">6 / 12</div>
+							<img src="images/entry.png" style="width:100%">
+						</div>
+			
+						<div class="mySlides fade">
+							<div class="numbertext">7 / 12</div>
+							<img src="images/view1.png" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">8 / 12</div>
+							<img src="images/view2.png" style="width:100%">
+						</div>
+			
+						<div class="mySlides fade">
+							<div class="numbertext">9 / 12</div>
+							<img src="images/view3.png" style="width:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						
+						</div>
+						<br>
+						<div style="text-align:center" style="align-content:center;">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span> 
+							<span class="dot" onclick="currentSlide(5)"></span> 
+							<span class="dot" onclick="currentSlide(6)"></span>
+							<span class="dot" onclick="currentSlide(7)"></span>
+							<span class="dot" onclick="currentSlide(8)"></span>
+							<span class="dot" onclick="currentSlide(9)"></span>
+							<span class="dot" onclick="currentSlide(10)"></span>
+							<span class="dot" onclick="currentSlide(11)"></span>
+							<span class="dot" onclick="currentSlide(12)"></span>
+						  </div>
+					</div>
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+					showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+					showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("mySlides");
+					let dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+					}
+				</script>
+					<div class="internal">
+						<h3>"LIGHT INTO DENSITY: ABSTRACT ENCOUNTERS FROM 1920S-1960S" EXHIBITION AT THE MANETTI SHREM MUSEUM OF ART</h3>
+						<p class="dates">January - September 2024</p>
+						<p>I was a Guest Exhibition Designer for the Manetti Shrem Museum of Art, where I worked in a team to create an exhibition design that focused on promoting visitor interpretations of the artworks on display. During my time in this position, I drafted exhibition text mockups for the interior spaces, designed title wall mockups, and assisted with spatial planning. Our main goal with our designs were to create a visitor-centered experience within the gallery space. The exhibition was on view at the Manetti Shrem Museum from September 2024 to May 2025.</p>
+						<p>I worked on this project in a team of 6 other UC Davis Design students, with UCD Design Professors Tim McNeil and Brett Snyder as our supervisors. You can find more information on this project through the website <a href="https://storiedspaces.faculty.ucdavis.edu/2024/10/11/light-into-density/">"Storied Spaces"</a> which is dedicated towards projects undertaken at UC Davis surrounding experiential design.</p>
+					</div>
+				</article>
+			</li>
+			<li><a href="infinity.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a></li>
+		</ul>
+	
+	</section>
+	<footer>
+		<H3>CONNECT WITH ME</H3>
+		<div class="icons">
+			<p><a href="https://www.linkedin.com/in/madelinemfurtado/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></p>
+			<p><a href="mailto:mmfurtado@ucdavis.edu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a></p>
+		</div>
+	
+	</footer>
+</body>
+</html>

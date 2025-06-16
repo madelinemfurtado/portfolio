@@ -140,17 +140,17 @@ nav ul {
     padding: 5px;
 }
 
-nav:active ul {
+nav:hover ul {
     right: 133px;
 	top: 55px;
 }
 
-nav:active ul li a:hover {
+nav:hover ul li a:hover {
 	text-align: center;	
 	font-weight: 600;
 }
 
-nav:active ul li a {
+nav:hover ul li a {
 	background-color: #000000;
 }
 
@@ -257,34 +257,37 @@ h2 {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev svg, .next svg{
 	transform: none;
 	cursor:pointer;
-	width: auto;
+	width: 40px;
+	height:40px;
 	color: rgb(0, 0, 0);
 	font-weight: bolder;
 	font-size: 18px;
 	transition: 0.3s ease;
 	user-select: none;
 	align-content: center;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 5 5 0 5;
+	justify-content: center;
   }
 
 .prev svg {
 	transform: none;
 	scale:60%;
+	padding:5px;
 }
 .next svg {
 	transform: none;
 	scale:60%;
+	padding:5px;
 }
 
   .prev svg:hover, .next svg:hover {
 	transform: none;
 	fill: #000000;
 	background-color: #ffffff;
-	border-radius: 50%;
+	border-radius: 100%;
   }
   
   /* The dots/bullets/indicators */
@@ -391,7 +394,7 @@ nav {
 	width: 600px;
 	padding-right: 40px;
 }
-nav:active ul li a:active {
+nav:hover ul li a:hover {
 	text-align: right;
 	font-weight: 600px;
 }

@@ -119,7 +119,7 @@ footer svg {
 
 
 /* NAVIGATION */
-nav{
+nav {
     position: absolute;
     top: 65px;
 	right: -50px;
@@ -140,17 +140,17 @@ nav ul {
     padding: 5px;
 }
 
-nav:active ul {
+nav ul {
     right: 133px;
 	top: 55px;
 }
 
-nav:active ul li a:hover {
+nav:hover ul li a:hover {
 	text-align: center;	
 	font-weight: 600;
 }
 
-nav:active ul li a {
+nav:hover ul li a {
 	background-color: #000000;
 }
 

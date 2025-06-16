@@ -140,17 +140,17 @@ nav ul {
     padding: 5px;
 }
 
-nav:hover ul {
+nav:active ul {
     right: 133px;
 	top: 55px;
 }
 
-nav:hover ul li a:hover {
+nav:active ul li a:hover {
 	text-align: center;	
 	font-weight: 600;
 }
 
-nav:hover ul li a {
+nav:active ul li a {
 	background-color: #000000;
 }
 
@@ -391,7 +391,7 @@ nav {
 	width: 600px;
 	padding-right: 40px;
 }
-nav:hover ul li a:hover {
+nav:active ul li a:active {
 	text-align: right;
 	font-weight: 600px;
 }

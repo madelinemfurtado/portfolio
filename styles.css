@@ -13,7 +13,7 @@ header {
 	background: #000000;
 }
 h1 {
-	font-family: "Lacquer", system-ui;
+	font-family: "Pirata One", system-ui;
  	font-weight: 400;
   	font-style: normal;
 	text-align: left;
@@ -27,7 +27,7 @@ header h1 a {
 	font-size: 40px;
 }
 h3 {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Roboto Mono", serif;
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
@@ -41,7 +41,7 @@ h3 {
 	text-align: center;
 }
 h2, div h2 {
-	font-family: "Lacquer", system-ui;
+	font-family: "Pinyon Script", cursive;
  	font-weight: 600px;
   	font-style: normal;
 	font-size: 60px;
@@ -58,27 +58,33 @@ article {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 1.5em;
 	padding-bottom: 30px;
 	justify-content: center;
 }
 
 p {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Roboto Mono", serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.5em;
 }
-
+.internal p {
+	font-size: 18px;
+}
+.internal h3 {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
 footer {
 	background: #000000;
 	padding: 50px 0;
 	text-align: center;
 	color:#fff;
-	font-family: "Roboto Mono", monospace;
+	font-family: "Pinyon Script", cursive;
 	font-weight: 300;
 	font-style: normal;
 	font-size: 14px;
@@ -88,7 +94,8 @@ footer {
 	padding-bottom: 10%;
 }
 footer h3 {
-	font-size: 22px;
+	font-family: "Pinyon Script", cursive;
+	font-size: 30px;
 	font-weight: 300;
 }
 .icons {
@@ -231,7 +238,7 @@ nav ul li a {
 		width: auto;
 	}
 	p {
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: 400px;
 	}
 }
@@ -243,6 +250,7 @@ nav ul li a {
 	font-size: 14pt;
 	text-align: right;
 	color: #fff;
+	padding: 10px;
 }
 h2 {
 	text-align: center;
@@ -348,13 +356,15 @@ header h1 a {
 	height: auto;
 }
 article {
-	display: flex;
 	gap: 50px;
 	justify-content: center;
 	width: 75%;
 }
 .infinity {
 	display: block;
+}
+.infinity p {
+	font-size: 18px;
 }
 h2 {
 	padding: 0;
@@ -434,6 +444,12 @@ footer {
 }
 
 .internal p img {
+	display:block;
+	width: 700px;
+	height: auto;
+	margin: auto;
+}
+.internal p video {
 	display:block;
 	width: 700px;
 	height: auto;

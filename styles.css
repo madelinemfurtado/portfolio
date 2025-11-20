@@ -79,6 +79,14 @@ p {
 	padding-top: 50px;
 	padding-bottom: 25px;
 }
+.internal a {
+	color: #333333;
+	padding: 3px;
+}
+.internal a:hover {
+	background-color: black;
+	color: white;
+}
 footer {
 	background: #000000;
 	padding: 50px 0;
@@ -233,16 +241,16 @@ nav ul li a {
 }
 
 .internal {
-	img {
-		height: 400px;
-		width: auto;
-	}
 	p {
 		font-size: 18px;
 		font-weight: 400px;
 	}
 }
-
+.internal p img {
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
 .numbertext {
 	font-family: "Roboto Mono", monospace;
 	font-weight: 300;
@@ -276,7 +284,6 @@ h2 {
 	transition: 0.3s ease;
 	user-select: none;
 	align-content: center;
-	padding: 5 5 0 5;
 	justify-content: center;
   }
 
@@ -442,13 +449,6 @@ footer {
 	gap: 20px;
 	flex-direction: row;
 }
-
-.internal p img {
-	display:block;
-	width: 700px;
-	height: auto;
-	margin: auto;
-}
 .internal p video {
 	display:block;
 	width: 700px;
@@ -472,5 +472,7 @@ footer {
 	h3 {
 		text-align: left;
 	}
+	justify-content: center;
+	align-content: center;
 }
 }

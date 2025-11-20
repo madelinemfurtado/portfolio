@@ -87,7 +87,7 @@ p {
 	background-color: black;
 	color: white;
 }
-.internal video {
+.internal p video {
 	width:300px;
 	height:auto;
 	display: block;

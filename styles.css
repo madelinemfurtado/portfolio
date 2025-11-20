@@ -38,7 +38,7 @@ h3 {
 }
 .dates {
 	margin-bottom: 30px;
-	text-align: center;
+	text-align: left;
 }
 h2, div h2 {
 	font-family: "Pinyon Script", cursive;
@@ -212,10 +212,13 @@ nav ul li a {
 
 .internal {
 	h3 {
-		text-align: center;
+		text-align:;
 	}
 	justify-content: center;
 	align-items: center;
+}
+.internal li svg{
+	display:none;
 }
 .internal p img {
 	display:block;
@@ -332,6 +335,9 @@ h2 {
 	animation-name: fade;
 	animation-duration: .75s;
   }
+#arrow {
+	display: none;
+}
 
 @keyframes fade {
 	from {opacity: .5} 
@@ -344,6 +350,7 @@ h2 {
 	margin: auto;
 }
 }
+
 @media only screen and (min-width: 570px) {
 	.row img {
 		width: 700px;
@@ -372,6 +379,9 @@ article {
 	gap: 50px;
 	justify-content: center;
 	width: 75%;
+}
+#arrow {
+	display: block;
 }
 .infinity {
 	display: block;

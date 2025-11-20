@@ -38,7 +38,7 @@ h3 {
 }
 .dates {
 	margin-bottom: 30px;
-	text-align: center;
+	text-align: left;
 }
 h2, div h2 {
 	font-family: "Pinyon Script", cursive;
@@ -212,11 +212,12 @@ nav ul li a {
 
 .internal {
 	h3 {
-		text-align: center;
+		text-align:;
 	}
 	justify-content: center;
 	align-items: center;
 }
+
 .internal p img {
 	display:block;
 	width: 300px;

@@ -12,6 +12,7 @@ header {
 	height: 100px;
 	background: #000000;
 }
+
 h1 {
 	font-family: "Pirata One", system-ui;
  	font-weight: 400;
@@ -21,10 +22,83 @@ h1 {
 	padding: 0;
 	line-height: 100px;
 }
+/*
+HAMBURGER MENU */
+
+#hamburger {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 50px;
+  background: rgb(255, 255, 255);
+ opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+#hamburger span:nth-child(4) {
+  top: 36px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+/*Header & MENU */
 header h1 a {
 	text-decoration: none;
 	color: white;
-	font-size: 40px;
+	font-size: 48px;
 }
 h3 {
 	font-family: "Roboto Mono", serif;
@@ -161,9 +235,15 @@ nav ul {
     padding: 5px;
 }
 
-nav:hover ul {
-    right: 133px;
-	top: 55px;
+nav ul.open {
+right: 150px;
+top:120px;
+}
+
+#hamburger {
+	position: fixed;
+    right: 60px;
+	top: 15px;
 }
 
 nav:hover ul li a:hover {
@@ -171,8 +251,10 @@ nav:hover ul li a:hover {
 	font-weight: 600;
 }
 
-nav:hover ul li a {
+nav ul li a{
+	color: #000000;
 	background-color: #000000;
+	display: block;
 }
 
 nav ul li a {
@@ -191,12 +273,13 @@ nav ul li a {
   	font-style: normal;
 	font-size: 16px;
 }
+
+/* PHOTOGRAPHY */
 .photos img {
 	width: 400px;
 	height:auto;
 	margin: auto;
 }
-/* PHOTOGRAPHY */
 .photos h2 {
 	text-align: center;
 	font-size: 60PX;
@@ -206,9 +289,7 @@ nav ul li a {
 	display: block;
 	margin: auto;
 }
-.photos img:hover {
-	transform: scale(1.05);
-}
+
 
 .internal {
 	h3 {
@@ -335,6 +416,7 @@ h2 {
 	animation-name: fade;
 	animation-duration: .75s;
   }
+
 #arrow {
 	display: none;
 }
@@ -358,9 +440,10 @@ h2 {
 		margin: auto;
 	}
 	header h1 a {
-		font-size: 50px;
+		font-size: 60px;
 	}
 }
+
 /*FULL DESKTOP*/
 @media only screen and (min-width: 1200px) {
 	h2 {
@@ -426,6 +509,7 @@ nav {
 	position: static;
 	width: 600px;
 	padding-right: 40px;
+	margin-top: 50px;
 }
 nav:hover ul li a:hover {
 	text-align: right;

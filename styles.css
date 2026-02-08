@@ -359,35 +359,25 @@ h2 {
 
 .slideshow-container {
 	background-color: #000000;
-	padding: 10px 40px 10px 40px;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: block;
 }
 
 /* Next & previous buttons */
-.prev svg, .next svg{
-	transform: none;
+.prev, .next {
 	cursor:pointer;
-	width: 40px;
-	height:40px;
 	color: rgb(0, 0, 0);
-	font-weight: bolder;
-	font-size: 18px;
 	transition: 0.3s ease;
 	user-select: none;
-	align-content: center;
 	justify-content: center;
   }
-
-.prev svg {
-	transform: none;
-	scale:60%;
-	padding:5px;
-}
-.next svg {
-	transform: none;
-	scale:60%;
-	padding:5px;
-}
-
+  .prev svg, .next svg {
+	width: 30px;
+	height: auto;
+	justify-content: center;
+  }
   .prev svg:hover, .next svg:hover {
 	transform: none;
 	fill: #000000;
@@ -420,9 +410,7 @@ h2 {
 #arrow {
 	display: none;
 }
-.prev svg, .next svg {
-	display: none;
-}
+
 
 @keyframes fade {
 	from {opacity: .5} 
@@ -547,9 +535,7 @@ footer {
 		padding-bottom: 5%;
 	}
 }
-.prev, .next {
-	display: block;
-}
+
 .index {
 	display: flex;
 	gap: 20px;

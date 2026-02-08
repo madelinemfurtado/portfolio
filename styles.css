@@ -359,14 +359,12 @@ h2 {
 
 .slideshow-container {
 	background-color: #000000;
-	padding: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 0px 40px;
 	display: block;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+a.prev, a.next {
 	cursor:pointer;
 	color: rgb(0, 0, 0);
 	transition: 0.3s ease;
@@ -374,8 +372,8 @@ h2 {
 	justify-content: center;
   }
   .prev svg, .next svg {
-	width: 30px;
-	height: auto;
+	height: 37px;
+	width: auto;
 	justify-content: center;
   }
   .prev svg:hover, .next svg:hover {

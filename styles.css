@@ -29,6 +29,7 @@ h1 {
 	line-height: 100px;
 	color: #0A3323;
 }
+
 /*
 HAMBURGER MENU */
 
@@ -124,12 +125,15 @@ h2, div h2 {
 	font-family: "Pinyon Script", cursive;
  	font-weight: 600px;
   	font-style: normal;
-	font-size: 60px;
-	margin-left: 5%;
-	text-align: left;
-	margin-bottom: 40px;
-	padding-top: 10%;
-	padding-bottom: 8%;
+	font-size: 50px;
+	text-align: center;
+}
+.photos {
+	padding-bottom: 153px;
+	padding-top: 50px;
+}
+.about {
+	padding-top: 50px;
 }
 article {
 	margin-left: 10%;
@@ -198,15 +202,13 @@ footer h3 {
 
 .about img {
 	display: block;
-	margin: auto;
 }
+
 .aboutme h3 {
 	text-align: left;
+	margin-top: 0px;
 }
-.aboutme h2 {
-	text-align: center;
-	margin-top: 10%;
-}
+
 .info p {
 	text-align: left;
 	line-height: 1.5em;
@@ -281,10 +283,6 @@ nav ul li a {
 	height:auto;
 	margin: auto;
 }
-.photos h2 {
-	text-align: center;
-	font-size: 60PX;
-}
 .photos img {
 	transition: transform 0.1s ease-in-out;
 	display: block;
@@ -351,9 +349,7 @@ nav ul li a {
 	color: #8abb96;
 	padding: 10px;
 }
-h2 {
-	text-align: center;
-}
+
 .mySlides img {
 	justify-content: center;
 }
@@ -408,7 +404,7 @@ a.prev, a.next {
 	animation-duration: .75s;
   }
 
-#arrow {
+#arrow, #arrow2 {
 	display: none;
 }
 
@@ -439,12 +435,15 @@ a.prev, a.next {
 /*FULL DESKTOP*/
 @media only screen and (min-width: 1200px) {
 	h2 {
-		font-size: 50px;
-		text-align: right;
-		margin: 0%;
+		font-size: 65px;
+		text-align: center;
 	}
 header h1 a {
-	font-size: 60px;
+	font-size: 70px;
+}
+.aboutme h2 {
+	text-align: center;
+	font-size: 65px;
 }
 .slideshow-container img {
 	width: 700px;
@@ -453,7 +452,6 @@ header h1 a {
 article {
 	gap: 50px;
 	justify-content: center;
-	width: 75%;
 }
 #arrow {
 	display: block;
@@ -478,8 +476,7 @@ article {
 	font-size: 18px;
 }
 h2 {
-	padding: 0;
-	padding-bottom: 10%;
+	padding: 100px 0px 25px 0px;
 }
 .info h3 {
 	text-align: left;
@@ -531,23 +528,10 @@ footer {
 	justify-content: center;
 	display: block;
 }
-.about h2{
-	padding-bottom: 15px;
-	display: block;
 
-}
 .infinity img {
 	width: 800px;
 	height: auto;
-}
-.photos {
-	padding-top: 5%;
-	padding-bottom: 7%;
-
-	h2 {
-		padding-top: 10px;
-		padding-bottom: 5%;
-	}
 }
 
 .index {
@@ -568,8 +552,17 @@ footer {
 }
 .photos img {
 	height: 400px;
-	width: auto;
+	width: 400px;
 	display: block;
+	margin: auto;
+	object-fit: cover;
+}
+#designs img {
+	height: 400px;
+	width: 600px;
+	display: block;
+	margin: auto;
+	object-fit: cover;
 }
 .row {
 	flex-wrap: wrap;
